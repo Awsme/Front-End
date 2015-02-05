@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Personal Blog</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,24 +29,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Логотип</a>
+        <a class="navbar-brand" href="#"><i class="fa fa-code fa-lg"></i></a>
       </div>
 
       <div class="collapse navbar-collapse" id="responsive-menu">
         <ul class="nav navbar-nav">
-          <li><a href="#">1 Курс</a></li>
-          <li class="dropdaown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">2 Курс <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Пункт 1</a></li>
-              <li><a href="#">Пункт 2</a></li>
-              <li><a href="#">Пункт 3</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Пункт 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#">3 Курс</a></li>
-          <li><a href="#">4 Курс</a></li>
+          <li><a href="#"><i class="fa fa-laptop"> Main Page</i></a></li>
+          <li><a href="#"><i class="fa fa-book"> Biography</i></a></li>
+          <li><a href="#"><i class="fa fa-newspaper-o"> News</i></a></li>
+          <li><a href="#"><i class="fa fa-rocket"> Work</i></a></li>
         </ul>
       </div>
     </div>
@@ -54,54 +46,57 @@
   <div id="carousel" class="carousel slide">
     <!--Индикаторы слайдов-->
     <ol class="carousel-indicators">
-      <li class="active" data-target="#carousel" data-slide="0"></li>
-      <li data-target="#carousel" data-slide="1"></li>
-      <li data-target="#carousel" data-slide="2"></li>
+      <li class="active" data-target="#carousel" data-slide-to="0"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
     </ol>
-
     <!--Слайды-->
     <div class="carousel-inner">
-
       <div class="item active">
-        <img src="images/laptop_denis.png" alt="">
+        <img src="images/laptop_denis.png" width="100%" alt="">
         <div class="carousel-caption">
-          <h3>Первый слайд</h3>
-          <p>Описание первого слайда</p>
+          <h3>Sherbak Denis, 19 years old</h3>
+          <p>Ukraine, Nikolaev</p>
         </div>
       </div>
-
       <div class="item">
-        <img src="images/bridge_denis.png" alt="">
+        <img src="images/bridge_denis.png" width="100%" alt="">
         <div class="carousel-caption">
-          <h3>Второй слайд</h3>
-          <p>Описание второго слайда</p>
+          <h3>Front-End Developer</h3>
+          <p>Basic Knowledge: HTML, CSS, Bootstrap 3, WP, GitHub</p>
         </div>
       </div>
-
       <div class="item">
-          <img src="images/googles_denis.png" alt="">
+          <img src="images/googles_denis.png" width="100%" alt="">
           <div class="carousel-caption">
-            <h3>Третий слайд</h3>
-            <p>Описание третьего слайда</p>
+            <h3>Visit my personal pages:</h3>
+            <p class="btn-group">
+                <a class="btn btn-primary" href="http://vk.com/git.awsme">
+                  <i class="fa fa-vk"></i>
+                </a>
+              <a class="btn btn-primary" href="https://twitter.com/DenisSherbak">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <button class="btn btn-primary" type="submit"><i class="fa fa-linkedin"></i></button>
+            </p>
           </div>
       </div>
     </div>
-
-
     <!--Переключатель слайдов-->
     <a href="#carousel" class="left carousel-control" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
-
     <a href="#carousel" class="right carousel-control" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   </div>
+
     <div class="container">
       <div class="row">
-        <h1>Название страницы</h1>
+        <h1>Biography</h1>
       </div>
     </div>
+
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
