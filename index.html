@@ -20,8 +20,8 @@
   </head>
   <body>
 
-  <div class="navbar navbar-inverse navbar-static-top">
-    <div class="container">
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
           <span class="sr-only">Открыть меню</span>
@@ -34,7 +34,7 @@
 
       <div class="collapse navbar-collapse" id="responsive-menu">
         <ul class="nav navbar-nav">
-          <li><a href="#"><i class="fa fa-laptop"> Main Page</i></a></li>
+          <li><a href="#"><i class="fa fa-laptop">Main Page</i></a></li>
           <li><a href="#"><i class="fa fa-book"> Biography</i></a></li>
           <li><a href="#"><i class="fa fa-newspaper-o"> News</i></a></li>
           <li><a href="#"><i class="fa fa-rocket"> Work</i></a></li>
@@ -91,23 +91,55 @@
     </a>
   </div>
 
-    <div class="container">
-      <div class="row">
-        <h1>Biography</h1>
-      </div>
-    </div>
-
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-          </div>
-        </div>
-        <div class="col-md-4 hidden-md visible-lg"></div>
+        <h1 class="alert alert-success">BIOGRAPHY</h1>
       </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="panel-group" id="accordion">
+               
+                <div class="panel panel-default">
+                   <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Open Code</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <img src="images/biography/image1.png" alt="" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="panel panel-default">
+                   <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Open Code</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>Text about me</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                   <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Open Code</a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>Text about me</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
